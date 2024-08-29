@@ -1,6 +1,6 @@
 #include "stats.h"
-typedef Stats = Statistics::Stats;
-Stats Statistics::ComputeStatistics(const std::vector<float>& numVec) {
+
+Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& numVec) {
     //Implement statistics here
     float avg = 0.0;
     float max_val = 0.0;
@@ -13,7 +13,7 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& numVec) {
     max_val= *max_element(numVec.begin(), numVec.end());
     min_val = *min_element(numVec.begin(), numVec.end());
 
-    Stats stats;
+    Statistics::Stats stats;
     stats.average = avg;
     stats.max = max_val;
     stats.min = min_val;
