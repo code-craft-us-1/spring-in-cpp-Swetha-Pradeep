@@ -2,7 +2,7 @@
 
 namespace Statistics {
     // define the Stats structure here. See the tests to infer its properties
-    Struct{
+    struct{
         float average;
         float max;
         float min;
