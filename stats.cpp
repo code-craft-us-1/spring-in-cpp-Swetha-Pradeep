@@ -5,7 +5,7 @@ Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& numVec
     float avg = 0.0;
     float max_val = 0.0;
     float min_val = 0.0;
-    for (int i = numVec.begin(); i != numVec.end(); i++) {
+    for (auto i = numVec.begin(); i != numVec.end(); i++) {
         avg = avg + *i;
     }
     average = avg / numVec.size();
