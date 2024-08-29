@@ -1,5 +1,6 @@
 #include "stats.h"
 #include <algorithm>
+#include <math.h>
 Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& numVec) {
     //Implement statistics here
     float avg = 0.0;
