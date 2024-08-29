@@ -1,5 +1,5 @@
 #include "stats.h"
-
+#include "algorithm.h"
 Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& numVec) {
     //Implement statistics here
     float avg = 0.0;
@@ -8,7 +8,7 @@ Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& numVec
     for (auto i = numVec.begin(); i != numVec.end(); i++) {
         avg = avg + *i;
     }
-    average = avg / numVec.size();
+    avg = avg / numVec.size();
 
     max_val= *max_element(numVec.begin(), numVec.end());
     min_val = *min_element(numVec.begin(), numVec.end());
